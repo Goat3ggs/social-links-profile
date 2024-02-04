@@ -1,0 +1,111 @@
+:root {
+    --backgrouond: hsl(0, 0%, 8%);
+    --container: hsl(0, 0%, 12%);
+    --para-clr: hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 70%);
+
+    --ff-default: 'Inter', sans-serif;
+
+    --fs-para: 0.9rem;
+    --fs-h1: 1.5rem;
+    --fs-h2: 1rem;
+
+    --fw-regular: 400;
+    --fw-semiBold: 600;
+    --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1 {
+    overflow: break-word;
+}
+
+body {
+    font-family: var(--ff-default);
+    font-size: var(--fs-para);
+    color: white;
+    background-color: var(--backgrouond);
+    text-align: center;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: var(--container);
+    margin-inline: 0.8rem;
+    margin-bottom: 10px;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    max-width: 360px;
+}
+
+img {
+    border-radius: 100vw;
+    height: 80px;
+    margin: auto;
+    margin-bottom: 1.6rem;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-semiBold);
+}
+
+
+.container p {
+    margin-bottom: 1.4rem;
+    color: var(--white);
+}
+
+.flex-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link {
+    padding: 0.7rem 0;
+    border-radius: 0.5rem;
+    background-color: var(--para-clr);
+}
+
+.flex-group .link:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.flex-group .link a:hover {
+    color: black;
+}                                                           
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: var(--fw-semiBold);
+    display: block;
+}
+
+
